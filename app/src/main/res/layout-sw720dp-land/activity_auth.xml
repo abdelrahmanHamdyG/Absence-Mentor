@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_of_auth"
+    tools:context="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.AuthActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="@dimen/largeIcon"
+        android:layout_height="@dimen/largeIcon"
+        android:src="@drawable/ic_check_circle_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/largeRightOrLeft"
+        android:layout_marginRight="@dimen/largeRightOrLeft"
+        android:textColorHint="#FFF"
+        android:layout_marginTop="@dimen/smallRightOrLeft"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FFF"
+            android:hint="Email"
+            android:textColor="#fff"
+            android:id="@+id/editTextAuthEmail"
+            android:inputType="textEmailAddress"
+            android:colorAccent="#fff"
+            android:fontFamily="sans-serif"
+            android:textColorHint="#fff"
+            android:textSize="@dimen/LandTextSize">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/largeRightOrLeft"
+        android:layout_marginRight="@dimen/largeRightOrLeft"
+        app:helperTextTextColor="#fff"
+        android:layout_marginTop="@dimen/smallRightOrLeft"
+
+        android:textColorHint="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutEmail">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/editTextAuthName"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FFF"
+            android:inputType="textPersonName"
+            android:hint="Name"
+            android:fontFamily="sans-serif"
+            android:colorAccent="#fff"
+            android:textColor="#FFF"
+            android:textColorHint="#fff"
+            android:textSize="@dimen/LandTextSize">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayoutPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/largeRightOrLeft"
+        android:layout_marginRight="@dimen/largeRightOrLeft"
+        android:layout_marginTop="@dimen/smallRightOrLeft"
+        android:textColorHint="#FFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutName">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/editTextAuthPassword"
+            android:colorAccent="#fff"
+            android:layout_height="match_parent"
+            android:backgroundTint="#FFF"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHighlight="#FFF"
+            android:fontFamily="sans-serif"
+            android:textColor="#FFF"
+            android:textColorHint="#fff"
+            android:textSize="@dimen/LandTextSize">
+        </com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/buttonRegisterAuthActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/largeRightOrLeft"
+        android:layout_marginRight="@dimen/largeRightOrLeft"
+        android:background="@drawable/auth_register_final"
+        android:text="Register"
+        android:textColor="#000"
+        android:textSize="@dimen/LandTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textInputLayoutPassword"
+        app:layout_constraintVertical_bias="0.243"></Button>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/smallRightOrLeft"
+        android:id="@+id/textToSignIn"
+        android:text="Already have an Account? Sign in "
+        android:textColor="#FFF"
+        android:textSize="@dimen/LandTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonRegisterAuthActivity"
+        app:layout_constraintVertical_bias="0.073"></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/privacy"
+        android:text="Terms of Use"
+        android:textColor="#FFF"
+        android:textSize="@dimen/LandTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textToSignIn"
+        app:layout_constraintVertical_bias="0.073"></TextView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

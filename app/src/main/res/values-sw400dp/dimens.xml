@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <dimen name="marginSmallTextSize">22sp</dimen>
+    <dimen name="marginMediumTextSize">28sp</dimen>
+    <dimen name="marginLargeTextSize">34dp</dimen>
+    <dimen name="marginVeryLargeTextSize">40sp</dimen>
+    <dimen name="marginLogoTextSize">47sp</dimen>
+    <dimen name="smallRightOrLeft">4dp</dimen>
+    <dimen name="largeRightOrLeft">7dp</dimen>
+    <dimen name="vertLargeRightOrLeft">16dp</dimen>
+    <dimen name="smallIcon">30dp</dimen>
+    <dimen name="LandTextSize">19sp</dimen>
+    <dimen name="largeIcon">90dp</dimen>
+
+
+
+
+
+
+</resources>

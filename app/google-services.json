@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "663096638837",
+    "firebase_url": "https://studentsabsentsforall.firebaseio.com",
+    "project_id": "studentsabsentsforall",
+    "storage_bucket": "studentsabsentsforall.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:663096638837:android:f04cf671afd7ecf00ba73c",
+        "android_client_info": {
+          "package_name": "com.abdelrahmanhamdy2.absencementor2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "663096638837-qfd03o66pkapbm8m07v1u19lq08ltp5u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.abdelrahmanhamdy2.absencementor2",
+            "certificate_hash": "fc8699ed2fc46550cd23bf44ac01809c3b073dbd"
+          }
+        },
+        {
+          "client_id": "663096638837-8s8f41ppne26it29irpddcmcuuikpita.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaM7HuQCFUhE_coxnc37K7SA4VGIL4YqQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "663096638837-8s8f41ppne26it29irpddcmcuuikpita.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

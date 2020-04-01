@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:weightSum="100"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.HistoryActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:theme="@style/ActionBarTheme"
+        android:background="@color/colorPrimary"
+        android:id="@+id/toolbarHistory"
+        android:layout_weight="8"
+        ></androidx.appcompat.widget.Toolbar>
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/drawerLayoutHistoryActivity"
+        android:layout_margin="0.25dp"
+        android:layout_weight="92"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/marginLargeTextSize"
+            android:layout_height="wrap_content"
+            android:id="@+id/NoHistory"
+            android:text="No History"
+            android:visibility="gone"
+            android:gravity="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            ></TextView>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/recyclerHistoryActivity"
+            ></androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.navigation.NavigationView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            app:headerLayout="@layout/navigation_header"
+            app:menu="@menu/menu_of_navigation"
+            android:layout_gravity="start"
+            android:id="@+id/navigationHistoryActivity"
+            ></com.google.android.material.navigation.NavigationView>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</LinearLayout>

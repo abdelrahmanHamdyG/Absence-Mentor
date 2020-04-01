@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+    <group>
+    <item
+        android:id="@+id/navigation_groups"
+        android:title="Groups"
+        android:icon="@drawable/ic_group_black_24dp"
+        ></item>
+
+
+    <item
+        android:id="@+id/navigation_add_groups"
+        android:title="Add Group"
+        android:icon="@drawable/ic_group_add_black_24dp"
+        ></item>
+
+    <item
+        android:id="@+id/navigation_history"
+        android:title="History"
+        android:icon="@drawable/ic_history_black_24dp"
+        ></item>
+
+    <item android:id="@+id/navigation_profile"
+        android:title="My Profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        ></item>
+    </group>
+
+    <group>
+
+<item
+    android:id="@+id/ShareButton"
+    android:title="share app "
+    android:icon="@drawable/ic_share_black_24dp"
+    ></item>
+
+    <item
+        android:id="@+id/Communicate"
+        android:icon="@drawable/ic_email_black_24dp"
+        android:title="CommunicateWithDeveloper "
+        ></item>
+
+    </group>
+
+
+<group>
+    <item
+        android:icon="@drawable/ic_subdirectory_arrow_left_black_24dp"
+        android:id="@+id/signOut"
+        android:title="SignOut " />
+    </group>
+</menu>

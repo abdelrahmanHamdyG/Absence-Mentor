@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+
+    <item android:title="Clear All"
+        android:id="@+id/ClearAllAddToGroupActivity"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="finish"
+        android:id="@+id/FinishAddToGroupActivity"
+        app:showAsAction="always"
+        />
+
+</menu>
