@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottomProfile"
+        android:title="Profile"
+        android:icon="@drawable/ic_person_black_24dp"
+        ></item>
+
+    <item
+        android:title="Groups"
+
+        android:id="@+id/bottomGroups"
+        android:icon="@drawable/ic_group_black_24dp"
+        ></item>
+    <item
+        android:id="@+id/bottomHistory"
+        android:title="History"
+        android:icon="@drawable/ic_history_black_24dp"
+        ></item>
+
+
+
+</menu>
