@@ -45,7 +45,7 @@ class SignInActivity : AppCompatActivity() {
                             progressSignin.dismiss()
 
                             var iToGroups=Intent(this,
-                                com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.GroupsActivity::class.java)
+                                com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.ActivityOfFragments::class.java)
                             iToGroups.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                             startActivity(iToGroups)
 

@@ -213,6 +213,7 @@ class ViewModelMainActivity(var app:Application):AndroidViewModel(app) {
 
 
 
+
     }
 
 
@@ -224,7 +225,6 @@ class ViewModelMainActivity(var app:Application):AndroidViewModel(app) {
         if (type=="absents"){
 
             absentsOrPresentsMainActivity.value="presents"
-
         }else{
 
             absentsOrPresentsMainActivity.value="absents"

@@ -31,25 +31,24 @@ class History2Activity : AppCompatActivity() ,NavigationView.OnNavigationItemSel
 
             R.id.navigation_groups ->{
                 drawerHistory2.closeDrawers()
-                startActivity(Intent(this,
-                    com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.GroupsActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
+                startActivity(Intent(this, ActivityOfFragments::class.java).putExtra("name","Groups").addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
                 return true
             }
             R.id.navigation_history ->{
                 drawerHistory2.closeDrawers()
-                startActivity(Intent(this, com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.HistoryActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK));return true}
+                startActivity(Intent(this, ActivityOfFragments::class.java).putExtra("name","History").addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK));return true}
             R.id.navigation_add_groups -> {
                 drawerHistory2.closeDrawers()
                 startActivity(Intent(this,
                     com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.AddToGroupActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK));return true}
             R.id.navigation_profile ->{
                 drawerHistory2.closeDrawers()
-                startActivity(Intent(this, com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.ProfileActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK));return true}
+                startActivity(Intent(this, ActivityOfFragments::class.java).putExtra("name","Profile").addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK));return true}
 
 
             R.id.ShareButton -> {
                 drawerHistory2.closeDrawers()
-                Helper.showToast(this, "We are working On It")
+                Helper.showToast(this, "Not available now")
 
                 return true
             }
@@ -59,7 +58,7 @@ class History2Activity : AppCompatActivity() ,NavigationView.OnNavigationItemSel
                 drawerHistory2.closeDrawers()
 
                 val iCommunicate=Intent(Intent.ACTION_VIEW)
-                iCommunicate.setData(Uri.parse("mailto:?subject=StudentsApp &to=dhamdy078@gmail.com"))
+                iCommunicate.data = Uri.parse("mailto:?subject=StudentsApp &to=dhamdy078@gmail.com")
                 startActivity(iCommunicate)
                 return true
             }
@@ -143,5 +142,9 @@ class History2Activity : AppCompatActivity() ,NavigationView.OnNavigationItemSel
     }
 
 
+    override fun onBackPressed() {
+
+        startActivity(Intent(this,ActivityOfFragments::class.java).putExtra("name","History").addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
+    }
 
 }

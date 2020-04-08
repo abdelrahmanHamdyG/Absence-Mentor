@@ -3,9 +3,8 @@
     package="com.abdelrahmanhamdy2.absencementor2">
 
     <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
-
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
     <application
         android:allowBackup="true"
@@ -14,36 +13,26 @@
         android:roundIcon="@mipmap/ic_launcher_new2_round"
         android:supportsRtl="false"
         android:theme="@style/GroupsTheme">
-        <activity android:name="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.SignInActivity"
-            android:theme="@style/AuthTheme"
-            ></activity>
-        <activity
-            android:name="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.AuthActivity"
-            android:theme="@style/AuthTheme">
-
-        </activity>
-        <activity android:name="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.ProfileActivity" >
-        </activity>
-        <activity
-            android:name="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.History2Activity"></activity>
-        <activity
-            android:name="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.HistoryActivity" />
-        <activity android:name="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.AddStudentByTeacherActivity"
-            android:theme="@style/AppTheme"
-            />
-        <activity android:name="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.AddToGroupActivity" >
-
-        </activity>
-        <activity
-            android:name="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.GroupsActivity">
+        <activity android:name=".ActivitesAndFragments.ActivityOfFragments">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.MainActivity" />
+            android:name=".ActivitesAndFragments.SignInActivity"
+            android:theme="@style/AuthTheme" />
+        <activity
+            android:name=".ActivitesAndFragments.AuthActivity"
+            android:theme="@style/AuthTheme"></activity>
+        <activity android:name=".ActivitesAndFragments.History2Activity" />
+        <activity
+            android:name=".ActivitesAndFragments.AddStudentByTeacherActivity"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".ActivitesAndFragments.AddToGroupActivity"></activity>
+
+        <activity android:name=".ActivitesAndFragments.MainActivity" />
+
     </application>
 
 </manifest>

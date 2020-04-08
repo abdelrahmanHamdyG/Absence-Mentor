@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
             R.id.navigation_groups->{
                 drawerMain.closeDrawers()
                 startActivity(Intent(this,
-                    com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.GroupsActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
+                    ActivityOfFragments::class.java).putExtra("name","Groups"))
                 return true
             }
 
@@ -55,7 +55,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
             R.id.navigation_history ->{
                 drawerMain.closeDrawers()
-                startActivity(Intent(this, com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.HistoryActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK));return true
+                startActivity(Intent(this, ActivityOfFragments::class.java).putExtra("name","History"));return true
 
             }
 
@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
             R.id.navigation_add_groups -> {
                 drawerMain.closeDrawers()
                 startActivity(Intent(this,
-                    com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.AddToGroupActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK));return true
+                    AddToGroupActivity::class.java));return true
 
             }
 
@@ -74,7 +74,7 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
             R.id.navigation_profile ->{
                 drawerMain.closeDrawers()
-                startActivity(Intent(this, com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.ProfileActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK));return true
+                startActivity(Intent(this, ActivityOfFragments::class.java).putExtra("name","Profile"));return true
 
             }
 
@@ -453,6 +453,14 @@ class MainActivity : AppCompatActivity(),NavigationView.OnNavigationItemSelected
 
             }
         }
+    }
+
+
+    override fun onBackPressed() {
+
+
+        startActivity(Intent(this,ActivityOfFragments::class.java).putExtra("name","Groups").addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
+
     }
 }
 

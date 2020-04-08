@@ -6,21 +6,11 @@
     android:orientation="vertical"
     android:layout_height="match_parent"
     android:weightSum="100"
-    tools:context="com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.ProfileActivity">
-
-    <androidx.appcompat.widget.Toolbar
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="8"
-        android:background="@color/colorPrimary"
-        android:theme="@style/ActionBarTheme"
-        android:id="@+id/toolbarProfile"
-        ></androidx.appcompat.widget.Toolbar>
-
+    tools:context="ActivitesAndFragments.ActivityOfFragments">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10"
+        android:layout_weight="12"
         android:background="@drawable/item_drawable"
         android:weightSum="100"
         >
@@ -53,7 +43,7 @@
         android:layout_width="match_parent"
         android:background="@drawable/item_drawable"
         android:layout_height="0dp"
-        android:layout_weight="10"
+        android:layout_weight="12"
         android:weightSum="100"
         >
 
@@ -85,7 +75,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="@drawable/item_drawable"
-        android:layout_weight="10"
+        android:layout_weight="12"
         android:weightSum="100"
         >
         <TextView

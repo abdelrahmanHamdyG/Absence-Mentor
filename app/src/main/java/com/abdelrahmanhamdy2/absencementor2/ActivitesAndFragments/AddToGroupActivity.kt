@@ -31,13 +31,13 @@ class AddToGroupActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
             R.id.navigation_groups->{
                 drawerAddToGroup.closeDrawers()
-                startActivity(Intent(this,
-                    com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.GroupsActivity::class.java))
+                startActivity(Intent(this, ActivityOfFragments::class.java).putExtra("name","Groups")
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK))
                 return true
             }
             R.id.navigation_history ->{
                 drawerAddToGroup.closeDrawers()
-                startActivity(Intent(this, com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.HistoryActivity::class.java))
+                startActivity(Intent(this, ActivityOfFragments::class.java).putExtra("name","History"))
                     return true
             
             }
@@ -48,12 +48,15 @@ class AddToGroupActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
             }
             R.id.navigation_profile ->{
                 drawerAddToGroup.closeDrawers()
-                startActivity(Intent(this, com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.ProfileActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK));return true}
+                startActivity(Intent(this, ActivityOfFragments::class.java).putExtra("name","Profile"))
+                return true
+
+            }
 
 
             R.id.ShareButton-> {
                 drawerAddToGroup.closeDrawers()
-                showToast(this,"We are working On It")
+                showToast(this,"It is not available now")
                 return true
             }
 
@@ -264,7 +267,7 @@ class AddToGroupActivity : AppCompatActivity(), NavigationView.OnNavigationItemS
 
                                             val iToMainActivity = Intent(
                                                 this,
-                                                com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.GroupsActivity::class.java
+                                                ActivityOfFragments::class.java
                                             )
                                             iToMainActivity.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                                             startActivity(iToMainActivity)

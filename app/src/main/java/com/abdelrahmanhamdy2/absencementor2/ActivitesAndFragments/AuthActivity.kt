@@ -128,7 +128,7 @@ class AuthActivity : AppCompatActivity() {
                                 )
                             )
                             dismissDialog()
-                            var iToGroups=Intent(this@AuthActivity, com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.GroupsActivity::class.java)
+                            var iToGroups=Intent(this@AuthActivity, com.abdelrahmanhamdy2.absencementor2.ActivitesAndFragments.ActivityOfFragments::class.java)
                             iToGroups.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK or Intent.FLAG_ACTIVITY_NEW_TASK)
                             startActivity(iToGroups)
 

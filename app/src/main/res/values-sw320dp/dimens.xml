@@ -4,7 +4,7 @@
 
     <dimen name="marginSmallTextSize">19sp</dimen>
     <dimen name="marginMediumTextSize">25sp</dimen>
-    <dimen name="marginLargeTextSize">27dp</dimen>
+    <dimen name="marginLargeTextSize">27sp</dimen>
     <dimen name="marginVeryLargeTextSize">36sp</dimen>
     <dimen name="marginLogoTextSize">40sp</dimen>
     <dimen name="smallRightOrLeft">2dp</dimen>
