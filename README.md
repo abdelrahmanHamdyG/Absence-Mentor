@@ -1,6 +1,6 @@
 # Absence Mentor
 
-Absence Mentor is an Android app designed to simplify the attendance-taking process for mentors in a classroom setting. With this app, mentors can efficiently manage attendance, add students to different classes, and track their attendance using class-specific IDs. 
+Absence Mentor is an Android app designed to simplify the attendance-taking process for mentors in a classroom setting. With this app, mentors can efficiently manage attendance, add students to different classes, track attendance history, and take attendance for specific classes.
 
 ## Features
 
@@ -10,7 +10,9 @@ Absence Mentor is an Android app designed to simplify the attendance-taking proc
 
 - **Student Enrollment**: Mentors can add students to their classes, maintaining an organized record of students attending each class.
 
-- **Attendance Tracking**: Students use the companion app, Absence Students, to enter the specific class ID when attending a class. The Absence Mentor app then captures and stores the attendance data.
+- **Attendance Tracking**: Students use the companion app, Absence Students, to enter the specific class ID when attending a class. The Absence Mentor app captures and stores the attendance data.
+
+- **Attendance History**: Mentors can view the attendance history for each class, allowing them to track and analyze attendance trends over time.
 
 ## Getting Started
 
@@ -26,4 +28,4 @@ To get started with Absence Mentor, follow these steps:
 
 5. Instruct students to download the companion app, Absence Students, from the Google Play Store at the following link: [Absence Students](https://play.google.com/store/apps/details?id=com.abdelrahmanhamdy2.absencestudents).
 
-6. Ask students to enter the class ID in the Absence Students app when attending a class. The attendance data will be automatically recorded in the Absence Mentor app.
+6. Ask students to enter the class ID in the Absence Students app when attending a class. The attendance data
