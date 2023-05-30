@@ -1,6 +1,6 @@
 # Absence Mentor
 
-Absence Mentor is an Android app designed to simplify the attendance-taking process for mentors in a classroom setting. With this app, mentors can efficiently manage attendance, add students to different classes, track attendance history, and take attendance for specific classes.
+Absence Mentor is an Android app using koltin designed to facilitate the attendance-taking process for mentors in a classroom setting. With this app, mentors can efficiently manage attendance, add students to different classes, track attendance history, and take attendance for specific classes.
 
 ## Features
 
